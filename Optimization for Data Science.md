@@ -1,0 +1,2 @@
+An optimization problem consists of maximizing or minimizing a real function by systematically choosing input values from within an allowed set and computing the value of the function
+It is the use of specific methods to determine the "best" solution to a problem (finding best functional representation fort data, finding best hyperplane to classify data)
