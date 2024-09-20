@@ -21,3 +21,27 @@ optimization problems are categorized based on type of objective function, const
 
 ### Nonlinear multivariate optimization
 ![[Pasted image 20240920004247.png]] 
+**Conditions for multivariate optimization**:
+- $\nabla f=0$ (gradient matrix) and $\nabla ^2 f>0$ (Hessian matrix) is positive definite
+- ![[Pasted image 20240920094215.png]]
+- a matrix is said to be positive definite if all the eigen values of the matrix are positive
+![[Pasted image 20240920095032.png]]
+
+<hr>
+### Unconstrained multivariate optimization - Directional Search
+This section focuses on searching for minimal point, as sometimes we might want to climb to higher points to be able to find a lower point
+- Find steepest direction at given point ($S^K$), then find how far to move in that direction (governed by learning rate $\alpha$), go to the next point and then find new steepest descent direction.
+- at a local minimum point, we have no option other than to climb
+
+This is called the **learning rule** in ML techniques.
+In Neural Networks we use,
+- Back-propogation algorithm
+- Gradient descent with chain rule
+
+The formula for **Gradient Descent** is given by: $$X^{K+1} = X^K -\alpha S^K$$
+where:
+	$X^{K}$ -> current point
+	$\alpha$ -> step length (learning rate)
+	$S^K$ -> steepest descent direction
+
+### Multivariate Optimization with equality constraints
