@@ -1,0 +1,1 @@
+Linear regression is used to build a model (functional relationship) between a dependent variables(s) and an independent variable(s)
