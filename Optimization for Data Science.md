@@ -45,3 +45,20 @@ where:
 	$S^K$ -> steepest descent direction
 
 ### Multivariate Optimization with equality constraints
+Sometimes we may have to find the optimal minimum that also satisfies a relation between the decision variables. In these cases we have equality constraints where $h_i(x)=0$ with $h_i(x)$ being the constraints applied
+
+At optimum; $$-\nabla f(x^*) = \sum_{i=1}^l[ \nabla h_i(x^*)]\lambda_i$$
+where $f(x)$ is the objective function,
+	$h_i(x)$ is the ith equality constraint applied
+	$\lambda_i$ is a constant
+	$l$ is number of constraints
+ie, the equation will be of the form $-\nabla f(x^*) = \lambda_1 \nabla h_1(x^*) + \lambda_2 \nabla h_2(x^*)+...$
+
+### Multivariate Optimization with inequality constraints
+Sometimes we may have to find the optimal minimum on one side of a classifying hyperplane. In these cases we have inequality constraints where $h(x)>0$ or $h(x)<0$
+At optimum; $$-\nabla f(x^*) = \sum_{i=1}^l[ \nabla h_i(x^*)]\lambda_i^* + \sum_{j=1}^m[ \nabla g_i(x^*)]\mu_j^*$$
+where $g_i(x)$ is the ith inequality constraint applied
+	$\mu_i$ is a constant
+
+Along with the above condition, the optimum must satisfy the KKT (Karush Kuhn Tucker) conditions
+![[Pasted image 20240920125555.png]]
