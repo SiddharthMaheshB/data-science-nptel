@@ -1,0 +1,13 @@
+- Powerful classification algorithm
+- non parametric, as in there are no parameters or equations used, and data itself is used to make classifications
+- simple and easy to implement 
+- No explicit training phase, especially useful on large data
+- KNN obtains a categorical value using the majority votes of nearest neighbors
+- smaller values of k tend to be affected by noise 
+- larger values of k reduce the effect of noise but makes the decision boundaries between classes less distinct
+- Features must be carefully chosen for optimal classification
+### Steps in KNN
+- Compute the distance metric between test data point and all labelled data points
+- order labelled data points in increasing order of distance
+- select top k labelled data points and look at classes
+- Find majority class and assign it to test data point

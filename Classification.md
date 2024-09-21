@@ -18,3 +18,9 @@ Algorithms that classify data into categories
 ### Sigmoid function
 - usage of a sigmoid function makes sure that p(x) is bounded by 1 and 0
 - $$p(x) = \frac{e^{(\beta_0 + \beta_1 x)}}{1 + e ^{(\beta_0 + \beta_1 x)}}$$
+- The parameters $\beta_0$ and $\beta_1$ are found by maximizing the likelihood function: $$L(\beta_0, ]beta_1) = \prod_{i=1}^n (p(x_i))^{y_i}(1-p(x_i))^{(1-y_i)}$$
+
+### Regularization
+Regularization is used to reduce overfitting in logical regression 
+Regularization works by penalizing a coefficient that is identified to not really contribute to the solution
+It avoids capturing noise in model due to overfitting
